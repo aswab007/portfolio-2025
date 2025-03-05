@@ -1,0 +1,10 @@
+.profile-img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+
+.project-link:visited {
+    color: rgb(237, 9, 9);
+}
