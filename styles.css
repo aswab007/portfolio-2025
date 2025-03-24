@@ -1,17 +1,71 @@
-.profile-img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 50%;
-}
 
-.creative {
+.profile-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border-radius: 50%;
+  }
+  
+  .profile-img:hover {
+    transform: scale(1.1) rotate(5deg);
+  }
+  
+
+  .creative {
     color: crimson;
     font-weight: bold;
-}
-
-.portfolio {
+  }
+  
+  .portfolio {
     color: black;
     font-weight: bold;
-}
+  }
+  
 
+  .theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text-color, #000);
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s ease;
+  }
+  
+  .theme-toggle:hover {
+    color: var(--primary-color, #007bff);
+  }
+  
+  :root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --primary-color: #007bff;
+  }
+  
+  [data-theme="dark"] {
+    --background-color: #121212;
+    --text-color: #ffffff;
+    --primary-color: #ff9800;
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  .navbar,
+  .table,
+  .card,
+  .container {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  .theme-toggle__half-sun {
+    width: 1.5em;
+    height: 1.5em;
+  }
+  
